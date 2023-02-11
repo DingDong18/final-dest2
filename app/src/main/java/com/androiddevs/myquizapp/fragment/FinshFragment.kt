@@ -1,4 +1,4 @@
-package com.androiddevs.myquizapp
+package com.androiddevs.myquizapp.fragment
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import com.androiddevs.myquizapp.R
 import com.androiddevs.myquizapp.databinding.FragmentFinshBinding
 
 
