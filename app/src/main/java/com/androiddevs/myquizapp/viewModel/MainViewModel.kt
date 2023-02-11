@@ -11,12 +11,11 @@ class MainViewModel() : ViewModel() {
     var currentQuestion :MutableLiveData<Int> = MutableLiveData()
     var answerIndex =0
     var questionIndex =0
-    var score =0
-    val currentOption : MutableLiveData<Int> = MutableLiveData()
+    val score : MutableLiveData<Int> = MutableLiveData()
 
     init {
         currentQuestion.value = 0
-        currentOption.value = currentQuestion.value
+        score.value =0
 
     }
     fun getCurrentQuestion() = Questions.question[currentQuestion.value!!]

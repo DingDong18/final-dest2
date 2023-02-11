@@ -6,10 +6,10 @@ object Questions {
 
 
       val question = mutableListOf<Question>(
-         Question(text ="Where is Visakha Bucha celebrated every year?", listOf("india","Bangladesh","America","Indonesia")),
-         Question(text ="Where is Diwali celebrated every year?", listOf("2india","Bangladesh","America","Indonesia")),
-         Question(text ="Where is Bango celebrated every year?", listOf("3india","Bangladesh","America","Indonesia")),
-         Question(text ="Where is Hallowen celebrated every year?", listOf("4india","Bangladesh","America","Indonesia"))
+         Question(text ="What is the capital of France?", listOf("Paris","London","Berlin","Chicago")),
+         Question(text ="Who wrote the famous novel \"To Kill a Mockingbird\"?", listOf("Harper Lee","William Faulkner","F.Scott Fitzgerald","F. Scott Fitzgerald")),
+         Question(text ="What is the largest ocean in the world?", listOf("Pacific Ocean","Atlantic Ocean","Southern Ocean","Indian Ocean")),
+         Question(text ="Who painted the famous artwork \"The Starry Night\"?", listOf(" Vincent van Gogh","Pablo Picasso","Claude Monet","Rembrandt"))
 
      )
 

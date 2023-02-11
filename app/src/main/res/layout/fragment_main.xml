@@ -3,49 +3,48 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <data>
 
-
-    </data>
-
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".fragment.MainFragment">
 
-
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="0dp"
+            android:layout_marginTop="8dp"
             android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ic_quiz" />
+            app:layout_constraintVertical_chainStyle="packed"
+            app:srcCompat="@drawable/iquiz" />
 
         <TextView
             android:id="@+id/question"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
             android:text="Question"
             android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold"
-            android:typeface="normal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
 
         <RadioGroup
             android:id="@+id/radioGroup"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
+            android:layout_marginTop="24dp"
             android:animateLayoutChanges="true"
             android:orientation="vertical"
             app:layout_constraintEnd_toEndOf="parent"
@@ -57,8 +56,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="6dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="6dp"
+                android:background="@drawable/radio_button_background"
+                android:button="@null"
                 android:checked="true"
+                android:gravity="center"
+                android:padding="10dp"
                 android:text="option1"
+                android:textColor="#000000"
+                android:textSize="16sp"
                 tools:text="Jo Biden" />
 
             <RadioButton
@@ -66,7 +73,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="6dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="6dp"
+                android:background="@drawable/radio_button_background"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="10dp"
                 android:text="option2"
+                android:textColor="#000000"
+                android:textSize="16sp"
                 tools:text="Donald Trumph" />
 
             <RadioButton
@@ -74,7 +89,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="6dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="6dp"
+                android:background="@drawable/radio_button_background"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="10dp"
                 android:text="option3"
+                android:textColor="#000000"
+                android:textSize="16sp"
                 tools:text="Henry kelivn" />
 
             <RadioButton
@@ -82,7 +105,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="6dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="6dp"
+                android:background="@drawable/radio_button_background"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="10dp"
                 android:text="option4"
+                android:textColor="#000000"
+                android:textSize="16sp"
                 tools:text="Jo Russo" />
         </RadioGroup>
 
@@ -90,13 +121,38 @@
             android:id="@+id/next"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="46dp"
             android:text="Next"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+
+        <Button
+            android:id="@+id/finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="46dp"
+            android:text="Finish"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:max="100"
+            android:progress="0"
+            android:progressDrawable="@drawable/custom_progress"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 </layout>
